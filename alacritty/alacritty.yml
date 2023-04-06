@@ -1,0 +1,55 @@
+### window and gaps
+window:
+  dimensions:
+    columns: 50
+    lines: 10
+  padding:
+    x: 40
+    y: 40
+### scrolling
+scrolling:
+  history: 1000
+  multiplier: 3
+### dynamic reload
+live_config_reload: true
+### font and its size
+font:
+  normal:
+    family: Hermit
+    style: Bold
+  size: 12
+### background transparency
+window.opacity: 1.0
+### cursor style and blinking
+cursor:
+  style:
+    shape: Underline
+    blinking: always
+    blink_interval: 50
+  unfocused_hollow: false
+### main colors
+colors:
+  primary:
+    background: "#0c0c0c"
+    foreground: "#d3d3d3"
+  cursor:
+    text: "#0c0c0c"
+    cursor: "#d3d3d3"
+  normal:
+    black: "#0c0c0c"
+    red: "#48393a"
+    green: "#65534d"
+    yellow: "#79665a"
+    blue: "#836e5e"
+    magenta: "#8e7766"
+    cyan: "#917781"
+    white: "#9a846d"
+  bright:
+    black: "#ac9377"
+    red: "#baa17e"
+    green: "#bca282"
+    yellow: "#c1a67e"
+    blue: "#cfb48e"
+    magenta: "#d1baa3"
+    cyan: "#dfc39b"
+    white: "#eed8c4"

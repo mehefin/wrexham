@@ -1,0 +1,81 @@
+/* font, colors, etc */
+:root {
+	--fn: "Codename Coder Free 4F";
+	--bg: #0c0c0c;
+	--fg: #f2f2f2;
+	--yel: #cfc9a3;
+	--ulc: #eec361;
+	--branch: 2px solid #cccccc;
+}
+/* font size */
+html {
+	font-size: 22px;
+}
+/* background color */
+body {
+	background: var(--bg);
+}
+/* container position */
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/* prompt */
+.prompt {
+	font-family: var(--fn);
+	color: var(--fg);
+}
+.prompt~.prompt {
+	padding: 1.5rem 0 0.3125rem;
+}
+span {
+	color: var(--yel);
+}
+/* making it tree-like */
+.tree > ul {
+	margin: 0;
+	padding-left: 1rem;
+}
+ul {
+	list-style: none;
+	padding-left: 2.5rem;
+	font-family: var(--fn);
+	color: var(--ulc);
+}
+li {
+	position: relative;
+}
+li::before, li::after {
+	content: "";
+	position: absolute;
+	left: -0.85rem;
+}
+li::before {
+	border-top: var(--branch);
+	top: 0.75rem;
+	width: 0.6rem;
+}
+li::after {
+	border-left: var(--branch);
+	height: 100%;
+	top: 0.25rem;
+}
+/* link color and hover */
+a {
+	font-family: var(--fn);
+	font-size: 1rem;
+	color: var(--fg);
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	color: var(--ulc);
+}
+/* blocks */
+.block {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
